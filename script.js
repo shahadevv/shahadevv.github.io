@@ -1,4 +1,4 @@
-const { projects, currentSkills, learningSkills, now } = portfolioContent;
+const { projects, currentSkills, learningSkills, now, memories } = portfolioContent;
 
 document.querySelector("#projects").innerHTML = projects.length ? projects.map((project) => `
   <article class="project-card ${project.color}">
@@ -26,3 +26,4 @@ document.querySelector("#now-title").textContent = now.title;
 document.querySelector("#now-project").textContent = now.project;
 document.querySelector("#now-description").textContent = now.description;
 document.querySelector("#year").textContent = new Date().getFullYear();
+document.querySelector("#memories-grid").innerHTML = memories.map((m) => ` <figure class="memory-item"> <img src="${m.src}" alt="${m.caption}" loading="lazy"> <figcaption>${m.caption}</figcaption> </figure> `).join("");
