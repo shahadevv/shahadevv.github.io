@@ -5,11 +5,11 @@
 */
 const portfolioContent = {
   projects: [],
-  currentSkills: ["Creative direction", "Brand identity", "Web design", "Front-end development", "Figma", "Art direction"],
-  learningSkills: ["Motion design", "3D & Blender", "Creative coding", "Italian"],
+  currentSkills: ["Java", "Python", "Web Design (Beginner)", "Multilingual: English / Bangla / Hindi / Urdu", "Video Editing", "Graphics Designer"],
+  learningSkills: ["Git & GitHub", "Web Development Basics", "Creative Coding", "Object-Oriented Programming"],
   now: {
     title: "my first projects.",
-    project: "Working on upcoming projects.",
+    project: "Creating my first personal branding website.",
     description: "I’m learning, experimenting, and building projects that I’ll share here soon."
   }
 };
