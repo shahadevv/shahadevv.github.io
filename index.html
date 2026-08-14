@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio of Shahriar — designer and developer." />
+    <title>Shahriar — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand brand-name" href="#top" aria-label="Shahriar home">Shahriar<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+      </nav>
+      <a class="header-contact" href="mailto:hello@alexmorgan.dev">Let's talk <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-pad">
+        <p class="eyebrow">Independent designer & developer <span>✦</span> Kuala Lumpur, MY</p>
+        <h1>Making digital things<br /><em>worth remembering.</em></h1>
+        <div class="hero-bottom">
+          <p>I turn thoughtful ideas into clear, expressive websites and digital experiences.</p>
+          <a class="round-link" href="#work" aria-label="See selected work">↓</a>
+        </div>
+        <div class="hero-orbit" aria-hidden="true"><span>AVAILABLE FOR WORK · AVAILABLE FOR WORK · </span></div>
+      </section>
+
+      <section class="statement section-pad" id="about">
+        <p class="section-label">01 / A little about me</p>
+        <div class="statement-content">
+          <h2>I care about the <em>feeling</em> as much as the function.</h2>
+          <div>
+            <p>Hey, I’m Alex. I’m a multidisciplinary creative who enjoys making complex ideas feel simple, warm, and human.</p>
+            <p>When I’m not at my desk, I’m probably collecting book covers, trying a new recipe, or planning an overly ambitious trip.</p>
+            <a class="text-link" href="mailto:hello@alexmorgan.dev">More about me <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section-pad" id="work">
+        <div class="section-heading">
+          <p class="section-label">02 / Selected projects</p>
+          <p class="count" id="project-count"></p>
+        </div>
+        <div class="project-grid" id="projects"></div>
+      </section>
+
+      <section class="learning section-pad" id="skills">
+        <div class="learning-copy">
+          <p class="section-label">03 / Always learning</p>
+          <h2>Curiosity is my<br /><em>favourite tool.</em></h2>
+          <p>Here are the skills I use today, and the areas currently sparking my interest.</p>
+        </div>
+        <div class="skills-wrap">
+          <div class="skill-group">
+            <p class="skill-heading">In my toolkit</p>
+            <div class="skill-list" id="current-skills"></div>
+          </div>
+          <div class="skill-group upcoming">
+            <p class="skill-heading">On the horizon <span>✦</span></p>
+            <div class="skill-list" id="learning-skills"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="now section-pad">
+        <p class="section-label">04 / Right now</p>
+        <div class="now-content">
+          <h2>Currently working on<br /><em id="now-title">a few good things.</em></h2>
+          <div class="now-card">
+            <p class="status"><span></span> In progress</p>
+            <h3 id="now-project"></h3>
+            <p id="now-description"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-pad">
+        <p class="eyebrow">Have an idea, a question, or just want to say hi?</p>
+        <a href="mailto:hello@alexmorgan.dev" class="contact-link">Let's make<br /><em>something good.</em> <span>↗</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand brand-name" href="#top">Shahriar<span>.</span></a>
+      <p>© <span id="year"></span> Shahriar</p>
+      <div><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">Dribbble</a></div>
+    </footer>
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
