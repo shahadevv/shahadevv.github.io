@@ -1,6 +1,6 @@
 const { projects, currentSkills, learningSkills, now } = portfolioContent;
 
-document.querySelector("#projects").innerHTML = projects.map((project) => `
+document.querySelector("#projects").innerHTML = projects.length ? projects.map((project) => `
   <article class="project-card ${project.color}">
     <div class="project-art">
       <span class="project-mark">${project.mark}</span>
@@ -11,7 +11,7 @@ document.querySelector("#projects").innerHTML = projects.map((project) => `
       <div><h3>${project.title}</h3><p>${project.type}</p></div>
       <span class="project-arrow">↗</span>
     </div>
-  </article>`).join("");
+  </article>`).join("") : `<p class="empty-projects">I’m working on upcoming projects. Check back soon. <span>✦</span></p>`;
 
 function addSkills(selector, skills) {
   document.querySelector(selector).innerHTML = skills.map((skill, index) =>
