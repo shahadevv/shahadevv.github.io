@@ -13,7 +13,7 @@ const portfolioContent = {
     description: "I’m learning, experimenting, and building projects that I’ll share here soon."
   },
   memories: [
-    { src: "images/IMG_20260322_231027_935.webp", caption: "A memory worth keeping" },
-    { src: "images/IMG-20260331-WA0006.jpg", caption: "Another moment" }
+    { src: "images/IMG_20260322_231027_935.webp", caption: "A self portrait in front of the Twin-Tower" },
+    { src: "images/IMG-20260331-WA0006.jpg", caption: "Lecture room moment" }
   ]
 };
